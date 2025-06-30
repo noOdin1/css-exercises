@@ -1,1 +1,15 @@
 /* Add CSS Styling */
+
+/* Without the comma, this acts as a 'AND'. */
+.avatar.proportioned {
+  width: 300px;
+  height: auto;
+}
+
+.avatar.distorted {
+  width:200px;
+  height: 400px;
+/* Alternative method to specify height, using the aspect ratio
+ * aspect: width/height;
+ **/
+}
