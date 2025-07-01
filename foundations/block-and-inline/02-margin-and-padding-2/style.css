@@ -16,7 +16,7 @@ body {
 
 .title {
   background: #e3f4ff;
-  margin: 24px auto 0px; /* This line is included to make this solution 
+  margin: 12px auto 0px; /* This line is included to make this solution 
                             go inline with the desired output. */ 
   font-size: 16px;
 }
@@ -29,6 +29,9 @@ body {
                         Another observation is that, this value must be 8px
                         to comply with the desired output. The instruction 
                         stated that the top and bottom must be 16.
+                      */
+  padding: 16px 8px;  /* Add to better comply with the instructions in 
+                         README.md.
                       */
 }
 
@@ -43,4 +46,5 @@ button {
   border: 1px solid #eee;
   display: block;
   margin: 0px auto;
+  padding: 8px 24px; /* Changed this, as per the instructions in README.md */
 }
