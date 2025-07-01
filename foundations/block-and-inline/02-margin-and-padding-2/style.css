@@ -3,6 +3,11 @@ body {
   font-family: sans-serif;
 }
 
+/* Group all the boxes that would share the same padding size */
+.card, .title, .content, .button-container {
+  padding: 8px;
+}
+
 .card {
   width: 400px;
   background: #fff;
@@ -11,17 +16,31 @@ body {
 
 .title {
   background: #e3f4ff;
+  margin: 24px auto 0px; /* This line is included to make this solution 
+                            go inline with the desired output. */ 
+  font-size: 16px;
 }
 
 .content {
   background: #e3f4ff;
+  margin: 8px auto;   /* Having 8px either side would shrink this box. 
+                        To comply with the desired output, auto was the 
+                        solution. 
+                        Another observation is that, this value must be 8px
+                        to comply with the desired output. The instruction 
+                        stated that the top and bottom must be 16.
+                      */
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align:center;
+  //margin: 8px 0px; /* Added to comply with the desired output. */
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  margin: 0px auto;
 }
