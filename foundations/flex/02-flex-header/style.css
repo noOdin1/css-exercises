@@ -7,11 +7,9 @@
   /* border: 5px solid firebrick; */
   height: 100px;
 }
-
 /* NOTE: The border with firebrick color is to see what is
  *       currently affecting the items, padding and/or margins.
  */
-
 .logo {
   font-size: 48px;
   font-weight: 900;
