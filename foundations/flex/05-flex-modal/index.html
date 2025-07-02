@@ -1,20 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Modal</title>
   </head>
   <body>
+    <!--
+NOTE:
+After referring to the desired output, I get a rough sense of the groupings for the
+items to be aligned. 
+  The 'icon' is to be a standalone item.  
+  Header and the close button belong in a group
+  text is in a group by itself
+  continue and cancel is in a group
+But to acheive the desired output, it must be further group into 2 parts:
+  flex direction horizontal 
+  flex direction vertical
+     -->
     <div class="modal">
       <div class="icon">!</div>
-      <div class="header">Are you sure you want to do that?</div>
-      <button class="close-button">✖</button>
-      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-      <button class="continue">Continue</button>
-      <button class="cancel">Cancel</button>
+      <div class="vert_grp">
+        <div class="top_part">
+          <div class="header">Are you sure you want to do that?</div>
+          <button class="close-button">✖</button>
+        </div>
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          excepturi id soluta, numquam minima rerum doloremque eveniet
+          aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem
+          consectetur sequi amet aspernatur cumque!
+        </div>
+        <div class="bot_part">
+          <button class="continue">Continue</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
