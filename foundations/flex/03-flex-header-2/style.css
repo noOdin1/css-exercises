@@ -1,6 +1,17 @@
 /* this is some magical font-importing.  
 you'll learn about it later. */
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap");
+
+/*
+ * NOTE: Initial thought on solving this problem was to group the items. 
+ *       Group 2 items to the left side and 2 on the right side. But then
+ *       the instruction did point out that it is possible to solve this 
+ *       without editing the html file. 
+ *       So, the other possibility was to somehow stretch the 2nd or the 
+ *       3rd element/item. I decided to try the 3rd element and it works. 
+ *       By having a margin-left to auto and specifying a width for the
+ *       3rd element.
+ **/
 
 body {
   margin: 0;
@@ -11,15 +22,22 @@ body {
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  /* border: 5px solid MediumVioletRed; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .profile-image {
   background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  /* border: 5px solid MediumVioletRed; */
 }
 
 .logo {
@@ -27,6 +45,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  /* border: 5px solid MediumVioletRed; */
 }
 
 button {
@@ -34,7 +53,11 @@ button {
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
+  width: 180px;
   padding: 8px 24px;
+  /* border: 5px solid MediumVioletRed; */
+  margin-left: auto;
+  flex: 0 0 1;
 }
 
 a {
@@ -44,5 +67,12 @@ a {
 }
 
 ul {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  padding: 2px;
+  gap: 1rem;
+
   list-style-type: none;
+  /* border: 5px solid MediumVioletRed; */
 }
