@@ -28,7 +28,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .profile-image {
@@ -71,7 +71,7 @@ ul {
   /* flex-direction: row; */
   justify-content: space-around;
   padding: 2px;
-  gap: 1rem;
+  gap: 16px;
 
   list-style-type: none;
   /* border: 5px solid MediumVioletRed; */
