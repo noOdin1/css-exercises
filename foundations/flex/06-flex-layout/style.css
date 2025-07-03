@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+ * Removing the underline for every link
+ */
+a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
 }
 
 img {
@@ -16,6 +28,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
+  margin: 0px 5px;
+  font-weight: bold;
 }
 
 input {
@@ -23,4 +38,62 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  margin: 18px 0px;
+}
+
+.header,
+.left-links,
+.right-links,
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-links,
+.right-links {
+  margin: 20px 18px;
+}
+
+.header,
+.footer {
+  justify-content: space-between;
+  margin: 0px;
+  width: 100vw;
+}
+
+/*
+ * The following 2 attributs for header and footer will fixed their 
+ * respective position to top af the page for header and bottom of 
+ * the page for footer.
+ **/
+.header {
+  position: fixed;
+  top: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background: #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.left-links,
+ul.right-links {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  margin: 2px;
+  padding: 5px;
 }
