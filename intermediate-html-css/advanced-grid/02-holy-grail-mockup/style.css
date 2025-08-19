@@ -115,7 +115,7 @@
   background-color: #ffffff;
   color: black;
   text-align: center;
-  height: 200px;
+  height: max(200px 50%);
 }
 
 .card p {
